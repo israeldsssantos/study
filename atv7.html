@@ -1,0 +1,29 @@
+<html>
+    <script>
+        // Faça um programa que leia três números, verifique (usando if e else) e mostre o maior e o menor deles;  
+        var numeroUm = Number(prompt("Primerio numero"))
+        var numeroDois = Number(prompt("Segundo numero"))
+        var numeroTres = Number(prompt("Terceiro numero"))
+        var maiorNumero
+        var menorNumero
+
+        if (numeroUm > numeroDois && numeroUm > numeroTres){
+            maiorNumero = numeroUm
+        } if (numeroDois > numeroUm && numeroDois > numeroTres){
+            maiorNumero = numeroDois
+        } if (numeroTres > numeroUm && numeroTres > numeroDois){
+            maiorNumero = numeroTres
+        } if (numeroUm < numeroDois && numeroTres){
+            menorNumero = numeroUm
+        } if (numeroDois < numeroUm && numeroDois < numeroTres){
+            menorNumero = numeroDois
+        } if (numeroTres < numeroUm && numeroTres < numeroDois){
+            menorNumero = numeroTres
+        }
+
+        console.log("O maior numero é: " , maiorNumero)
+        console.log("O menor numero é: " , menorNumero)
+
+
+    </script>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <script>
+        //  Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, sabendo que a decisão é sempre o mais barato.  
+
+     var precoProdutoUm = Number(prompt("Valor do primeiro produto"))
+     var precoProdutoDois = Number(prompt("Valor do segundo produto:"))
+     var precoProdutoTres = Number(prompt("Valor do terceiro produto:"))
+     var menorValor
+     var primeiroProduto = "Compre o primeiro Produto"
+     var segundoProduto = "Compre o segundo Produto"
+     var terceiroProduto = "Compre o terceiro Produto"
+
+     if (precoProdutoUm < precoProdutoDois && precoProdutoUm < precoProdutoTres){
+        menorValor = precoProdutoUm
+     } if (precoProdutoDois < precoProdutoUm && precoProdutoDois < precoProdutoTres){
+        menorValor = precoProdutoDois
+     }  if (precoProdutoTres < precoProdutoDois && precoProdutoTres < precoProdutoDois){
+        menorValor = precoProdutoTres
+     } if (menorValor === precoProdutoUm){
+        menorValor = primeiroProduto
+     } if (menorValor === precoProdutoDois){
+        menorValor = segundoProduto
+     } if (menorValor === precoProdutoTres ){
+        menorValor = terceiroProduto
+     }
+
+     console.log(menorValor)
+
+
+
+    </script>
+</html>

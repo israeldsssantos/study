@@ -1,0 +1,18 @@
+<html>
+    <script>
+        saude = Number(prompt())
+        dano = Number(prompt())
+        
+        function personagemMorreu (dano, saude) {
+           calculoDeVida = saude - dano
+           return calculoDeVida 
+        }
+
+        if (personagemMorreu <= 0){
+            console.log("dead")
+        }else{
+            console.log("life")
+        }
+
+    </script>
+</html>
