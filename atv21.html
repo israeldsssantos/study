@@ -1,0 +1,36 @@
+<html>
+    <script>
+        //Faça um programa que peça os 3 lados de um triângulo. O programa deverá informar se os valores podem ser um triângulo. Indique, caso 
+        //os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno. Dicas:
+
+        //Três lados formam um triangulo quando a soma de quaisquer dos dois lados é maior que o terceiro.
+        //Triângulo Equilátero: três lados iguais;
+        //Triângulo Isósceles: quaisquer dois lados iguais;
+        //Triângulo Escaleno: três lados diferentes;
+
+        const primeiroLado = Number(prompt("Valor do primeiro lado"))
+        const segundoLado = Number(prompt("Valor do segundo lado"))
+        const terceiroLado = Number(prompt("valor do terceiro lado"))
+
+        if (primeiroLado === segundoLado && primeiroLado === terceiroLado && segundoLado === terceiroLado ){
+            console.log("Pode ser um triangulo equilatero")
+        }
+
+        else if (primeiroLado === segundoLado || primeiroLado === terceiroLado || terceiroLado === segundoLado && primeiroLado + segundoLado > terceiroLado || primeiroLado + terceiroLado > segundoLado || segundoLado + terceiroLado > primeiroLado){
+            console.log("Pode ser um triangulo Isósceles")
+        }
+
+        else if (primeiroLado != segundoLado || primeiroLado != terceiroLado || segundoLado != terceiroLado && primeiroLado + segundoLado > terceiroLado || primeiroLado + terceiroLado > segundoLado || segundoLado + terceiroLado > primeiroLado){
+            console.log("Pode ser um triangulo Escaleno")
+        }
+
+        else {
+            console.log("Não pode ser um triangulo")
+        }
+
+    
+        
+
+
+    </script>
+</html>
