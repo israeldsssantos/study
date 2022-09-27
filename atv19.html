@@ -1,0 +1,27 @@
+<html>
+    <script>
+        const notaUm = Number(prompt("Digite a primeria nota:"))
+        const notaDois = Number(prompt("Digite a segunda nota"))
+        const mediaNota = (notaUm + notaDois) / 2
+
+        if (mediaNota >= 9 && mediaNota <= 10){
+            console.log(`Media de aproveitamento A - ${mediaNota}`)
+        }
+
+        if (mediaNota >= 7.5 && mediaNota < 9){
+            console.log(`Media de aproveitamento B - ${mediaNota}`)
+        }
+
+        if (mediaNota >= 6 && mediaNota < 7.5){
+            console.log(`Media de aproveitamento C - ${mediaNota}`)
+        }
+
+        if (mediaNota >= 4 && mediaNota < 6){
+            console.log(`Media de aproveitamento D - ${mediaNota}`)
+        }
+
+        if (mediaNota < 4){
+            console.log(`Media de aproveitamento E - ${mediaNota}`)
+        }
+    </script>
+</html>

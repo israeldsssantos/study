@@ -1,0 +1,43 @@
+<html>
+    <script>
+        const notaUm = Number(prompt("Digite a primeria nota:"))
+        const notaDois = Number(prompt("Digite a segunda nota"))
+        const mediaNota = (notaUm + notaDois) / 2
+        let conceito
+        let notaFinal
+        let aprovacao
+
+        if (mediaNota >= 9 && mediaNota <= 10){
+            conceito = "A"
+            notaFinal = mediaNota
+            aprovacao = "Aprovado"
+        }
+
+        if (mediaNota >= 7.5 && mediaNota < 9){
+            conceito = "B"
+            notaFinal = mediaNota
+            aprovacao = "Aprovado"
+        }
+
+        if (mediaNota >= 6 && mediaNota < 7.5){
+            conceito = "D"
+            notaFinal = mediaNota
+            aprovacao = "Aprovado"
+        }
+
+        if (mediaNota >= 4 && mediaNota < 6){
+            conceito = "E"
+            notaFinal = mediaNota
+            aprovacao = "Reprovado"
+        }
+
+        if (mediaNota < 4){
+            conceito = "F"
+            notaFinal = mediaNota
+            aprovacao = "Reprovado"
+            
+        }
+
+        console.log(`Nota 1 ${notaUm}, Nota 2 ${notaDois}, Média ${mediaNota}, Conceito ${conceito}, o aluno foi ${aprovacao} `)
+    </script>
+</html>
