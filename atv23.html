@@ -1,15 +1,16 @@
 <html>
     <script>
+        function resultado (valor){
+            if (valor > 0){
+                console.log("Positivo")
+            } if (valor < 0){
+                console.log("Negativo")
+            } return valor
+        }
+         
+        resultadoFinal = resultado(-9)
+        console.log(resultadoFinal)
+
         
-        
-        function tempoDeDuracao (segundo, tempoTotal = 1, minutos){
-            tempoTotal = 1
-            hora = tempoTotal
-            segundos = (tempoTotal / 60) * 60
-            minutos = tempoTotal * 60
-            return (horas, segundos, minutos)
-        } 
-        console.log(minutos)
-        console.log(segundos)
     </script>
 </html>
